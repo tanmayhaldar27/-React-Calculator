@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+#root{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 20%; */
+    width: 30rem;
+    height: 30.3rem;
+    /* padding: 20px; */
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 10px -10px 50px 2px rgba(0, 0, 255, 0.47), 
+            -10px 10px 50px 1px rgba(255, 0, 0, 0.47);
+}
+.App .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.App .inputs input{
+    height: 3.5rem;
+    border: 2px solid black;
+    padding: .5rem;
+    width: 20rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+input::placeholder{
+    color: black;
+    font-weight: 600;
+}
+.App h3{
+    margin-bottom: 2.2rem;
+    font-size: 2rem;
+}
+.App .buttons{
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: center;
+    align-items:center;
+    gap: 1.2rem;
+}
+button{
+    cursor: pointer;
+    padding: .5rem 1.2rem;
+    /* font-size: 25px; */
+    font-size: 2.5rem;
+    border-radius: 0px;
+    border: 1px solid #2b2b2b;
+    color: white;
+    background-color: #2B2B2B;
+    transition: all ease .3s;
+}
+button:hover{
+    background-color:#545454;
+    color: lime;
+}
+.success , .error{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.success{
+    color:#0057FF;
+}
+.error{
+    color: red;
+}
+.result{
+    font-weight: 600;
+    margin-top: 10px; 
+    font-size:1.5rem;   
+}
+.icons{
+    width: 1.6rem;
+    padding-top: 6px;
+}
+
+@media (max-width:320px){
+    html{
+        font-size: 30%;
+    }
+}
+ @media (min-width:320px ) and (max-width:480px){
+    html{
+        font-size: 40%;
+    }
+}
+
+@media (min-width:480px) and (max-width:620px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (min-width:620px) and (max-width:840px){
+    html{
+        font-size: 55%;
+    }
+} 
